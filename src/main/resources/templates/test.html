@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+</head>
+<body>
+    <form th:action="@{/login}" method="post">
+        <div>
+            <label th:for="id">id</label>
+            <input type="text" id="id" placeholder="ID">
+        </div>
+        <div>
+            <label th:for="pwd">pwd</label>
+            <input type="text" id="pwd" placeholder="PWD">
+        </div>
+        <button type="submit">Sign in</button>
+    </form>
+</body>
+</html>
